@@ -10,6 +10,16 @@ public class Author {
     private int id;
     private String name;
     private String bio;
+    @OneToOne
+    private User user;
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     public int getId() {
         return id;
